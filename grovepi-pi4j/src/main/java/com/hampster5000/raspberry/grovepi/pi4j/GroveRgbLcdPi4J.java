@@ -16,7 +16,11 @@ public class GroveRgbLcdPi4J extends GroveRgbLcd {
   private final I2CDevice text;
 
   public GroveRgbLcdPi4J() throws IOException {
-    this.bus = I2CFactory.getInstance(I2CBus.BUS_1);
+    try {
+      this.bus = I2CFactory.getInstance(I2CBus.BUS_1);
+    } catch (I2CFactory.UnsupportedBusNumberException e) {
+      throw new GroveUnsupportedBusNumberException(e);
+    }
     this.rgb = bus.getDevice(DISPLAY_RGB_ADDR);
     this.text = bus.getDevice(DISPLAY_TEXT_ADDR);
     init();

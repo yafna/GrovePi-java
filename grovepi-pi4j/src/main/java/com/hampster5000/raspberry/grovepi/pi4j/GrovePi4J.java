@@ -23,7 +23,11 @@ public class GrovePi4J implements GrovePi {
   private final I2CDevice device;
 
   public GrovePi4J() throws IOException {
-    this.bus = I2CFactory.getInstance(I2CBus.BUS_1);
+    try {
+      this.bus = I2CFactory.getInstance(I2CBus.BUS_1);
+    } catch (I2CFactory.UnsupportedBusNumberException e) {
+      throw new GroveUnsupportedBusNumberException(e);
+    }
     this.device = bus.getDevice(GROVEPI_ADDRESS);
   }
 
