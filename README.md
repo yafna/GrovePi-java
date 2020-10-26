@@ -26,14 +26,14 @@ Alternatively: Use maven dependencies:
 Mandatory:
 
     <dependency>
-      <groupId>org.iot.raspberry</groupId>
+      <groupId>com.github.yafna.raspberry</groupId>
       <artifactId>GrovePi-spec</artifactId>
     </dependency>
 
 Device Implementation:
 
     <dependency>
-      <groupId>org.iot.raspberry</groupId>
+      <groupId>com.github.yafna.raspberry</groupId>
       <artifactId>GrovePi-pi4j</artifactId>
     </dependency>
 

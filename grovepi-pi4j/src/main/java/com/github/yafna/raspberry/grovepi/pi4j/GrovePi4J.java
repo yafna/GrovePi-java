@@ -14,7 +14,7 @@ import com.github.yafna.raspberry.grovepi.devices.GroveRgbLcd;
 /**
  * Create a new GrovePi interface using the Pi4j library
  *
- * @author Eduardo Moranchel <emoranchel@asmatron.org>
+ * @author Eduardo Moranchel &lt;emoranchel@asmatron.org&gt;
  */
 public class GrovePi4J implements GrovePi {
 
