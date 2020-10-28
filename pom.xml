@@ -34,7 +34,7 @@
 
 	<scm>
 		<connection>scm:git:git@github.com:yafna/GrovePi-java.git</connection>
-		<developerConnection>sscm:git:git@github.com:yafna/GrovePi-java.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:yafna/GrovePi-java.git</developerConnection>
 		<url>http://github.com/yafna/GrovePi-java.gito/tree/master</url>
 	</scm>
 
