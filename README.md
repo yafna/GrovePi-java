@@ -53,4 +53,4 @@ GroveDigitalOut led = grovePi.getDigitalOut(4);
 
 The number in the parameters is usually the port number you are using.
 
-*NOTE* YOU MUST NOT CREATE MULTIPLE GrovePi objects! use the same for all the devices connected to your board. using multiple may cause collisions in device access.
+*NOTE*: YOU MUST NOT CREATE MULTIPLE GrovePi objects! use the same for all the devices connected to your board. Using multiple may cause collisions in device access.
