@@ -1,6 +1,6 @@
 package com.github.yafna.raspberry.grovepi.pi4j;
 
-import com.pi4j.io.i2c.I2CDevice;
+import com.pi4j.io.i2c.I2C;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.Level;
@@ -9,9 +9,9 @@ import com.github.yafna.raspberry.grovepi.GroveIO;
 
 public class IO implements GroveIO {
 
-  private final I2CDevice device;
+  private final I2C device;
 
-  public IO(I2CDevice device) {
+  public IO(I2C device) {
     this.device = device;
   }
 

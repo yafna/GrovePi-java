@@ -19,7 +19,7 @@ public class GroveUltrasonicRanger {
   }
 
   public double get() throws IOException {
-    return grovePi.exec((io) -> {
+    return (double) grovePi.exec((io) -> {
       io.write(GrovePiCommands.uRead_cmd, pin, GrovePiCommands.unused, GrovePiCommands.unused);
       io.sleep(200);
       int[] v = GroveUtil.unsign(io.read(new byte[4]));
